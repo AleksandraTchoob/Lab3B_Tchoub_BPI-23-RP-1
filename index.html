@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа № 3B. Справочник пользователей с использованием REST API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Справочник пользователей</h1>
+
+  <!-- Область сообщений -->
+  <p id="message" class="message"></p>
+
+  <!-- Кнопка «Загрузить пользователей» и поле «Поиск по имени» -->
+  <div class="controls">
+    <button id="load-btn">Загрузить пользователей</button>
+    <input type="text" id="search-input" class="search-input" placeholder="Поиск по имени" disabled>
+  </div>
+
+  <!-- Область списка пользователей -->
+  <div id="users-list"></div>
+
+  <!-- Область публикаций выбранного пользователя -->
+  <div id="posts-area" class="posts-area">
+    <h2 id="posts-title">Публикации пользователя:</h2>
+    <p id="posts-message" class="message"></p>
+    <p id="posts-placeholder" class="posts-placeholder">
+      Публикации пока не выбраны. Нажмите кнопку «Показать публикации» у любого пользователя.
+    </p>
+    <div id="posts-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

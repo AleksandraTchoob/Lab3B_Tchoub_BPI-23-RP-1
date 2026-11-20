@@ -1,0 +1,120 @@
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 0 15px;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.search-input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.message {
+    min-height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.message.loading { background: #fff3cd; color: #856404; }
+.message.success { background: #d4edda; color: #155724; }
+.message.error { background: #f8d7da; color: #721c24; }
+.message:empty { display: none; }
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover { background: #0056b3; }
+button:disabled { background: #cccccc; cursor: not-allowed; }
+
+/* Карточка пользователя */
+.user-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.user-info p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.posts-placeholder {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.posts-area {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.post-card {
+    border-left: 4px solid #007bff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 0 4px 4px 0;
+    background: #f0f7ff;
+}
+
+.post-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+}
+
+.post-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #444;
+}
